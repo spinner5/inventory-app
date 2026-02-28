@@ -7,7 +7,6 @@ app.get("/health", (req, res) => {
   res.send("ok");
 });
 
-const PORT = process.env.PORT || 3000;
-app.listen(PORT, () => {
-  console.log(`App listening port ${PORT}`);
+app.listen(config.PORT, () => {
+  console.log(`App listening port ${config.PORT}`);
 });
